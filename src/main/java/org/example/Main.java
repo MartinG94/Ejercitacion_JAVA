@@ -31,7 +31,8 @@ public class Main {
                         break;
                     }
                     case 2: {
-                        System.out.println("Funcionalidad 2...");
+                        EjercicioDos ej2 = new EjercicioDos();
+                        System.out.println(ej2.getEnunciado());
                         break;
                     }
                     case 0: {
