@@ -13,7 +13,7 @@ public class Main {
 
             System.out.println("MENU DE OPCIONES");
             System.out.println("1. Ejercicio (1)");
-            System.out.println("1. Ejercicio (2)");
+            System.out.println("2. Ejercicio (2)");
             System.out.println("0. Salir");
             try{
 
@@ -23,6 +23,7 @@ public class Main {
                 switch (opcion) {
                     case 1: {
                         EjercicioUno ej1 = new EjercicioUno();
+                        System.out.println(ej1.getEnunciado());
                         String alumno;
                         System.out.println("Ingrese el nombre del alumno para saludarlo!");
                         alumno = teclado.next();
