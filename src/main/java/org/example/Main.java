@@ -23,8 +23,8 @@ public class Main {
                 switch (opcion) {
                     case 1: {
                         EjercicioUno ej1 = new EjercicioUno();
-                        System.out.println(ej1.getEnunciado());
                         String alumno;
+                        System.out.println(ej1.getEnunciado());
                         System.out.println("Ingrese el nombre del alumno para saludarlo!");
                         alumno = teclado.next();
                         ej1.saludar(alumno);
