@@ -39,10 +39,14 @@ public class EjercicioDos {
                 opcion = teclado.nextInt();
                 switch (opcion) {
                     case 1 -> {
+                        int tam, desde, hasta;
                         System.out.println("Ingrese un tamaño para el Array: ");
-                        int tam;
                         tam = teclado.nextInt();
-                        this.rellenarArrayAleatorio(tam);
+                        System.out.println("Desde: ");
+                        desde = teclado.nextInt();
+                        System.out.println("Hasta ");
+                        hasta = teclado.nextInt();
+                        this.rellenarArrayAleatorio(tam, desde, hasta);
                         System.out.println("El array se generó exitosamente.");
                         break;
                     }
@@ -72,12 +76,12 @@ public class EjercicioDos {
         }
     }
 
-    public void rellenarArrayAleatorio(int tam) {
+    public void rellenarArrayAleatorio(int tam, int desde, int hasta) {
         this.setArrayDeNumeros(new int[tam]);
         Random rnd = new Random();
         int n;
         for(int i=0; i < this.getArrayDeNumeros().length; i++) {
-            this.getArrayDeNumeros()[i] = rnd.nextInt(20 - 1 + 1) + 1;
+            this.getArrayDeNumeros()[i] = rnd.nextInt(hasta - desde + 1) + desde;
         }
         Arrays.sort(this.getArrayDeNumeros());
     }
