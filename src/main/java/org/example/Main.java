@@ -23,20 +23,15 @@ public class Main {
                 switch (opcion) {
                     case 1 -> {
                         EjercicioUno ej1 = new EjercicioUno();
-                        ej1.mostrarEnunciado();;
+                        ej1.mostrarEnunciado();
                         ej1.funcionalidad();
-                        break;
                     }
                     case 2 -> {
                         EjercicioDos ej2 = new EjercicioDos();
                         ej2.mostrarEnunciado();
                         ej2.funcionalidad();
-                        break;
                     }
-                    case 0 -> {
-                        salir = true;
-                        break;
-                    }
+                    case 0 -> salir = true;
                     default -> System.out.println("Solo puedes elegir el 1 o el 2");
                 }
             } catch (InputMismatchException e) {
