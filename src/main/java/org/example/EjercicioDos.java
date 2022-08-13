@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
 import java.util.Random;
 import java.util.Arrays;
 
@@ -24,7 +26,50 @@ public class EjercicioDos {
     }
 
     public void funcionalidad() {
+        Scanner teclado = new Scanner(System.in);
+        boolean salir = false;
+        int opcion;
 
+        while(!salir) {
+            System.out.println("1. Generar Array con numeros aleatorios.");
+            System.out.println("2. Mostrar Array.");
+            System.out.println("3. Buscar un valor en el array y cambiar su signo.");
+            System.out.println("0. Salir.");
+            try {
+                opcion = teclado.nextInt();
+                switch (opcion){
+                    case 1: {
+                        System.out.println("Ingrese un tamaño para el Array: ");
+                        int tam;
+                        tam = teclado.nextInt();
+                        this.rellenarArrayAleatorio(tam);
+                        System.out.println("El array se generó exitosamente.");
+                        break;
+                    }
+                    case 2: {
+                        this.mostrarNumeros();
+                        break;
+                    }
+                    case 3: {
+                        System.out.println("Ingrese el valor que desea buscar.");
+                        int valor;
+                        valor = teclado.nextInt();
+                        this.comprobarSiContiene(valor);
+                        break;
+                    }
+                    case 0: {
+                        salir = true;
+                        break;
+                    }
+                    default: {
+                        System.out.println("Elige una opcion valida");
+                    }
+                }
+            } catch (InputMismatchException e){
+                System.out.println("Debes insertar un numero");
+                teclado.next();
+            }
+        }
     }
 
     public void rellenarArrayAleatorio(int tam) {
