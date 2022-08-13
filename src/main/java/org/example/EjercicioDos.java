@@ -71,13 +71,16 @@ public class EjercicioDos {
         }
     }
 
+    public void ordenarAscendente(int[] array) {
+        Arrays.sort(array);
+    }
     public void generarArrayAleatorio(int tam, int desde, int hasta) {
         this.setArrayDeNumeros(new int[tam]);
         Random rnd = new Random();
         for(int i=0; i < this.getArrayDeNumeros().length; i++) {
             this.getArrayDeNumeros()[i] = rnd.nextInt(hasta - desde + 1) + desde;
         }
-        Arrays.sort(this.getArrayDeNumeros());
+        this.ordenarAscendente(this.getArrayDeNumeros());
     }
 
     public void mostrarNumeros() {
