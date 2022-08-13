@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 public class EjercicioDos {
 
-    private String enunciado = """
+    private final String enunciado = """
             Desarrollar un programa con menú de opciones que implemente lo siguiente:
             Generar en un arreglo n elementos numéricos aleatorios (pueden existir duplicados) y  ordenarlo en forma ascendente
             Mostrar el arreglo
