@@ -12,8 +12,8 @@ public class Main {
         while(!salir) {
 
             System.out.println("--- MENU DE OPCIONES ---");
-            System.out.println("1. Ejercicio (1)");
-            System.out.println("2. Ejercicio (2)");
+            System.out.println("1. Bienvenido");
+            System.out.println("2. Ordenar y Buscar");
             System.out.println("0. Salir");
             try{
 
