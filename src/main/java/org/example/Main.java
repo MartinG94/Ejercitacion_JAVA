@@ -1,4 +1,5 @@
 package org.example;
+import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.Random;
@@ -34,7 +35,7 @@ public class Main {
                     case 2: {
                         EjercicioDos ej2 = new EjercicioDos();
                         System.out.println(ej2.getEnunciado());
-                        ej2.funcionalidad();
+                        System.out.println(Arrays.toString(ej2.rellenarArrayAleatorio(10)));
                         break;
                     }
                     case 0: {

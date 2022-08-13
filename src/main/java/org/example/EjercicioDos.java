@@ -26,16 +26,14 @@ public class EjercicioDos {
         System.out.println("Entraste a la funcionalidad 2...");
     }
 
-    public int[] rellenarArrayAleatorio(int desde, int hasta, int tam) {
-        int[] numeros = new int[tam];
+    public int[] rellenarArrayAleatorio(int tam) {
+        this.setArrayDeNumeros(new int[tam]);
         Random rnd = new Random();
         int n;
-        for(int i=0; i < numeros.length; i++) {
-            do{
-                n = rnd.nextInt(hasta - desde + 1) + desde;
-            } while (this.comprobarSiContiene(numeros, i, n));
+        for(int i=0; i < this.getArrayDeNumeros().length; i++) {
+            this.getArrayDeNumeros()[i] = rnd.nextInt();
         }
-        return numeros;
+        return this.getArrayDeNumeros();
     }
 
     public boolean comprobarSiContiene(int[] numeros, int indice, int valor) {
