@@ -1,6 +1,7 @@
 package org.example;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -33,6 +34,7 @@ public class Main {
                     case 2: {
                         EjercicioDos ej2 = new EjercicioDos();
                         System.out.println(ej2.getEnunciado());
+                        ej2.funcionalidad();
                         break;
                     }
                     case 0: {

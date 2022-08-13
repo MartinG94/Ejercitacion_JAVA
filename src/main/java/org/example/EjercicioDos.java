@@ -7,7 +7,7 @@ public class EjercicioDos {
             "Mostrar el arreglo\n"+
             "Buscar un elemento x dentro del arreglo (x se ingresa por teclado). Si no existe, informarlo. Si existe, cambiar su signo.";
 
-    private int []arrayDeNumeros;
+    private int[] arrayDeNumeros;
     public String getEnunciado() {
         return enunciado;
     }
@@ -20,7 +20,7 @@ public class EjercicioDos {
         this.arrayDeNumeros = arrayDeNumeros;
     }
 
-    public void generarArray() {
-
+    public void funcionalidad() {
+        System.out.println("Entraste a la funcionalidad 2...");
     }
 }
