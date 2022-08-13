@@ -23,13 +23,13 @@ public class Main {
                 switch (opcion) {
                     case 1 -> {
                         EjercicioUno ej1 = new EjercicioUno();
-                        System.out.println(ej1.getEnunciado());
+                        ej1.mostrarEnunciado();;
                         ej1.funcionalidad();
                         break;
                     }
                     case 2 -> {
                         EjercicioDos ej2 = new EjercicioDos();
-                        System.out.println(ej2.getEnunciado());
+                        ej2.mostrarEnunciado();
                         ej2.funcionalidad();
                         break;
                     }

@@ -25,6 +25,9 @@ public class EjercicioDos {
         this.arrayDeNumeros = arrayDeNumeros;
     }
 
+    public void mostrarEnunciado() {
+        System.out.println(this.getEnunciado());
+    }
     public void funcionalidad() {
         Scanner teclado = new Scanner(System.in);
         boolean salir = false;
