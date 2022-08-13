@@ -27,7 +27,7 @@ public class EjercicioDos {
         System.out.println("Entraste a la funcionalidad 2...");
     }
 
-    public int[] rellenarArrayAleatorio(int tam) {
+    public void rellenarArrayAleatorio(int tam) {
         this.setArrayDeNumeros(new int[tam]);
         Random rnd = new Random();
         int n;
@@ -35,7 +35,10 @@ public class EjercicioDos {
             this.getArrayDeNumeros()[i] = rnd.nextInt(20 - 1 + 1) + 1;
         }
         Arrays.sort(this.getArrayDeNumeros());
-        return this.getArrayDeNumeros();
+    }
+
+    public void mostrarNumeros() {
+        System.out.println(Arrays.toString(this.getArrayDeNumeros()));
     }
 
     public boolean comprobarSiContiene(int[] numeros, int indice, int valor) {

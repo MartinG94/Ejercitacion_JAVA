@@ -35,7 +35,8 @@ public class Main {
                     case 2: {
                         EjercicioDos ej2 = new EjercicioDos();
                         System.out.println(ej2.getEnunciado());
-                        System.out.println(Arrays.toString(ej2.rellenarArrayAleatorio(10)));
+                        ej2.rellenarArrayAleatorio(10);
+                        ej2.mostrarNumeros();
                         break;
                     }
                     case 0: {
