@@ -58,7 +58,7 @@ public class EjercicioDos {
                         System.out.println("Ingrese el valor que desea buscar.");
                         int valor;
                         valor = teclado.nextInt();
-                        this.comprobarSiContiene(valor);
+                        this.cambiarSignoSiExiste(valor);
                         break;
                     }
                     case 0 -> {
@@ -90,7 +90,7 @@ public class EjercicioDos {
         System.out.println(Arrays.toString(this.getArrayDeNumeros()));
     }
 
-    public void comprobarSiContiene(int valor) {
+    public void cambiarSignoSiExiste(int valor) {
         for (int i = 0; i < this.getArrayDeNumeros().length; i++) {
             if( this.getArrayDeNumeros()[i] == valor ) {
                 int aux = this.getArrayDeNumeros()[i];
