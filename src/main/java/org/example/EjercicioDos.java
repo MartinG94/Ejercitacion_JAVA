@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.Random;
+import java.util.Arrays;
 
 public class EjercicioDos {
 
@@ -31,8 +32,9 @@ public class EjercicioDos {
         Random rnd = new Random();
         int n;
         for(int i=0; i < this.getArrayDeNumeros().length; i++) {
-            this.getArrayDeNumeros()[i] = rnd.nextInt();
+            this.getArrayDeNumeros()[i] = rnd.nextInt(20 - 1 + 1) + 1;
         }
+        Arrays.sort(this.getArrayDeNumeros());
         return this.getArrayDeNumeros();
     }
 
