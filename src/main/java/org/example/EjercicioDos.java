@@ -90,9 +90,12 @@ public class EjercicioDos {
     public void cambiarSignoSiExiste(int valor) {
         for (int i = 0; i < this.getArrayDeNumeros().length; i++) {
             if( this.getArrayDeNumeros()[i] == valor ) {
-                int aux = this.getArrayDeNumeros()[i];
-                aux *= -1;
-                this.getArrayDeNumeros()[i] = aux;
+                this.getArrayDeNumeros()[i] *= -1;
+                int j = i;
+                while (valor == this.getArrayDeNumeros()[j+1]) {
+                    this.getArrayDeNumeros()[j+1] *= -1;
+                    j++;
+                }
                 System.out.println("El valor "+valor+" existe y se cambio su signo");
                 return;
             }
