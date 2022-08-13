@@ -54,21 +54,15 @@ public class EjercicioDos {
                         this.rellenarArrayAleatorio(tam, desde, hasta);
                         System.out.println("El array se generó exitosamente.");
                     }
-                    case 2 -> {
-                        this.mostrarNumeros();
-                    }
+                    case 2 -> this.mostrarNumeros();
                     case 3 -> {
                         System.out.println("Ingrese el valor que desea buscar.");
                         int valor;
                         valor = teclado.nextInt();
                         this.cambiarSignoSiExiste(valor);
                     }
-                    case 0 -> {
-                        salir = true;
-                    }
-                    default -> {
-                        System.out.println("Elige una opcion valida");
-                    }
+                    case 0 -> salir = true;
+                    default -> System.out.println("Elige una opcion valida");
                 }
             } catch (InputMismatchException e){
                 System.out.println("Debes insertar un numero");
@@ -96,10 +90,10 @@ public class EjercicioDos {
                 int aux = this.getArrayDeNumeros()[i];
                 aux *= -1;
                 this.getArrayDeNumeros()[i] = aux;
-                System.out.println("El valor "+valor+" existe y se cambio su signo");;
+                System.out.println("El valor "+valor+" existe y se cambio su signo");
                 return;
             }
         }
-        System.out.println("El numero "+valor+" no existe en el array");;
+        System.out.println("El numero "+valor+" no existe en el array");
     }
 }
