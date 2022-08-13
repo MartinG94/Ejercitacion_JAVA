@@ -53,22 +53,18 @@ public class EjercicioDos {
                         hasta = teclado.nextInt();
                         this.rellenarArrayAleatorio(tam, desde, hasta);
                         System.out.println("El array se generó exitosamente.");
-                        break;
                     }
                     case 2 -> {
                         this.mostrarNumeros();
-                        break;
                     }
                     case 3 -> {
                         System.out.println("Ingrese el valor que desea buscar.");
                         int valor;
                         valor = teclado.nextInt();
                         this.cambiarSignoSiExiste(valor);
-                        break;
                     }
                     case 0 -> {
                         salir = true;
-                        break;
                     }
                     default -> {
                         System.out.println("Elige una opcion valida");
