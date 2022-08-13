@@ -9,7 +9,7 @@ public class Program {
         Scanner teclado = new Scanner(System.in);
         boolean salir = false;
         int opcion; //Guardamos la opción que elige el usuario
-        
+
         while(!salir) {
             System.out.println("--- MENU DE OPCIONES ---");
             System.out.println("1. Bienvenido");
