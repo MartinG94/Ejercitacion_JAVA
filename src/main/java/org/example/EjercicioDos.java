@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Random;
+
 public class EjercicioDos {
 
     private String enunciado = "Desarrollar un programa con menú de opciones que implemente lo siguiente:\n"+
@@ -22,5 +24,26 @@ public class EjercicioDos {
 
     public void funcionalidad() {
         System.out.println("Entraste a la funcionalidad 2...");
+    }
+
+    public int[] rellenarArrayAleatorio(int desde, int hasta, int tam) {
+        int[] numeros = new int[tam];
+        Random rnd = new Random();
+        int n;
+        for(int i=0; i < numeros.length; i++) {
+            do{
+                n = rnd.nextInt(hasta - desde + 1) + desde;
+            } while (this.comprobarSiContiene(numeros, i, n));
+        }
+        return numeros;
+    }
+
+    public boolean comprobarSiContiene(int[] numeros, int indice, int valor) {
+        for (int i = 0; i < indice; i++) {
+            if( numeros[i] == valor ) {
+                return true;
+            }
+        }
+        return false;
     }
 }
