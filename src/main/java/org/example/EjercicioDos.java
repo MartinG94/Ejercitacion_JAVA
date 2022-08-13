@@ -51,7 +51,7 @@ public class EjercicioDos {
                         desde = teclado.nextInt();
                         System.out.println("Hasta ");
                         hasta = teclado.nextInt();
-                        this.rellenarArrayAleatorio(tam, desde, hasta);
+                        this.generarArrayAleatorio(tam, desde, hasta);
                         System.out.println("El array se generó exitosamente.");
                     }
                     case 2 -> this.mostrarNumeros();
@@ -71,7 +71,7 @@ public class EjercicioDos {
         }
     }
 
-    public void rellenarArrayAleatorio(int tam, int desde, int hasta) {
+    public void generarArrayAleatorio(int tam, int desde, int hasta) {
         this.setArrayDeNumeros(new int[tam]);
         Random rnd = new Random();
         for(int i=0; i < this.getArrayDeNumeros().length; i++) {
