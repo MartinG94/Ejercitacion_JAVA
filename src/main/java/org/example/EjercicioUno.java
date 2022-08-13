@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class EjercicioUno {
 
-    private String enunciado = "Crear un programa para que permita ingresar el nombre del alumno, y responda con el mensaje: \"Bienvenido [alumno] a TSB\"";
+    private final String enunciado = "Crear un programa para que permita ingresar el nombre del alumno, y responda con el mensaje: \"Bienvenido [alumno] a TSB\"";
 
     public String getEnunciado() {
         return enunciado;
