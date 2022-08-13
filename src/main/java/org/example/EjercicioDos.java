@@ -37,8 +37,8 @@ public class EjercicioDos {
             System.out.println("0. Salir.");
             try {
                 opcion = teclado.nextInt();
-                switch (opcion){
-                    case 1: {
+                switch (opcion) {
+                    case 1 -> {
                         System.out.println("Ingrese un tamaño para el Array: ");
                         int tam;
                         tam = teclado.nextInt();
@@ -46,22 +46,22 @@ public class EjercicioDos {
                         System.out.println("El array se generó exitosamente.");
                         break;
                     }
-                    case 2: {
+                    case 2 -> {
                         this.mostrarNumeros();
                         break;
                     }
-                    case 3: {
+                    case 3 -> {
                         System.out.println("Ingrese el valor que desea buscar.");
                         int valor;
                         valor = teclado.nextInt();
                         this.comprobarSiContiene(valor);
                         break;
                     }
-                    case 0: {
+                    case 0 -> {
                         salir = true;
                         break;
                     }
-                    default: {
+                    default -> {
                         System.out.println("Elige una opcion valida");
                     }
                 }
