@@ -1,4 +1,5 @@
 package org.example;
+import java.util.Scanner;
 
 public class EjercicioUno {
 
@@ -8,6 +9,13 @@ public class EjercicioUno {
         return enunciado;
     }
 
+    public void funcionalidad() {
+        Scanner teclado = new Scanner(System.in);
+        String alumno;
+        System.out.println("Ingrese el nombre del alumno para saludarlo!");
+        alumno = teclado.next();
+        this.saludar(alumno);
+    }
     public void saludar(String nombre) {
         System.out.println("Bienvenido "+nombre+" a TSB!");
     }

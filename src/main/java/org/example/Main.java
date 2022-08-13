@@ -1,8 +1,6 @@
 package org.example;
-import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,11 +23,8 @@ public class Main {
                 switch (opcion) {
                     case 1: {
                         EjercicioUno ej1 = new EjercicioUno();
-                        String alumno;
                         System.out.println(ej1.getEnunciado());
-                        System.out.println("Ingrese el nombre del alumno para saludarlo!");
-                        alumno = teclado.next();
-                        ej1.saludar(alumno);
+                        ej1.funcionalidad();;
                         break;
                     }
                     case 2: {
