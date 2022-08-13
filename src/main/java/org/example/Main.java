@@ -2,7 +2,7 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        App program = new App();
-        program.ejecutar();
+        Program app = new Program();
+        app.ejecutar();
     }
 }

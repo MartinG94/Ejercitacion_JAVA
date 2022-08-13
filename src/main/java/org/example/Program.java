@@ -3,7 +3,7 @@ package org.example;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class App {
+public class Program {
 
     public void ejecutar() {
         Scanner teclado = new Scanner(System.in);
