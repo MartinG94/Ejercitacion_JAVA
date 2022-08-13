@@ -9,15 +9,13 @@ public class Program {
         Scanner teclado = new Scanner(System.in);
         boolean salir = false;
         int opcion; //Guardamos la opción que elige el usuario
-
+        
         while(!salir) {
-
             System.out.println("--- MENU DE OPCIONES ---");
             System.out.println("1. Bienvenido");
             System.out.println("2. Ordenar y Buscar");
             System.out.println("0. Salir");
             try{
-
                 System.out.println("Escribe una de las opciones");
                 opcion = teclado.nextInt();
 
