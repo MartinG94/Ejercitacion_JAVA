@@ -80,7 +80,6 @@ public class EjercicioDos {
     public void rellenarArrayAleatorio(int tam, int desde, int hasta) {
         this.setArrayDeNumeros(new int[tam]);
         Random rnd = new Random();
-        int n;
         for(int i=0; i < this.getArrayDeNumeros().length; i++) {
             this.getArrayDeNumeros()[i] = rnd.nextInt(hasta - desde + 1) + desde;
         }
