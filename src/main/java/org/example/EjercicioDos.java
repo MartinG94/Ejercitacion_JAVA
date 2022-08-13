@@ -24,7 +24,7 @@ public class EjercicioDos {
     }
 
     public void funcionalidad() {
-        System.out.println("Entraste a la funcionalidad 2...");
+
     }
 
     public void rellenarArrayAleatorio(int tam) {
@@ -41,12 +41,16 @@ public class EjercicioDos {
         System.out.println(Arrays.toString(this.getArrayDeNumeros()));
     }
 
-    public boolean comprobarSiContiene(int[] numeros, int indice, int valor) {
-        for (int i = 0; i < indice; i++) {
-            if( numeros[i] == valor ) {
-                return true;
+    public void comprobarSiContiene(int valor) {
+        for (int i = 0; i < this.getArrayDeNumeros().length; i++) {
+            if( this.getArrayDeNumeros()[i] == valor ) {
+                int aux = this.getArrayDeNumeros()[i];
+                aux *= -1;
+                this.getArrayDeNumeros()[i] = aux;
+                System.out.println("El valor "+valor+" existe y se cambio su signo");;
+                return;
             }
         }
-        return false;
+        System.out.println("El numero "+valor+" no existe en el array");;
     }
 }

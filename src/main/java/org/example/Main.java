@@ -37,6 +37,7 @@ public class Main {
                         System.out.println(ej2.getEnunciado());
                         ej2.rellenarArrayAleatorio(10);
                         ej2.mostrarNumeros();
+                        ej2.comprobarSiContiene(6);
                         break;
                     }
                     case 0: {
