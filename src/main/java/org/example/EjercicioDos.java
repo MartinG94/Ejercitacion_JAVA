@@ -56,10 +56,14 @@ public class EjercicioDos {
                     }
                     case 2 -> this.mostrarNumeros();
                     case 3 -> {
-                        System.out.println("Ingrese el valor que desea buscar.");
-                        int valor;
-                        valor = teclado.nextInt();
-                        this.cambiarSignoSiExiste(valor);
+                        if (this.getArrayDeNumeros() != null) {
+                            System.out.println("Ingrese el valor que desea buscar.");
+                            int valor;
+                            valor = teclado.nextInt();
+                            this.cambiarSignoSiExiste(valor);
+                        } else {
+                            System.out.println("Todavia no creaste el Array");
+                        }
                     }
                     case 0 -> salir = true;
                     default -> System.out.println("Elige una opcion valida");
@@ -88,7 +92,7 @@ public class EjercicioDos {
         if (numeros != null) {
             System.out.println(Arrays.toString(numeros));
         } else {
-            System.out.println("Todavía no se creó un Array.");
+            System.out.println("Todavía no creaste un Array.");
         }
     }
 
