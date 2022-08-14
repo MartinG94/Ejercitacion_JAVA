@@ -88,17 +88,19 @@ public class EjercicioDos {
     }
 
     public void cambiarSignoSiExiste(int valor) {
-        int longitud = this.getArrayDeNumeros().length;
+        int[] numeros = this.getArrayDeNumeros();
+        int longitud = numeros.length;
         System.out.println(longitud);
         for (int i = 0; i < longitud; i++) {
-            if (this.getArrayDeNumeros()[i] == valor) {
-                this.getArrayDeNumeros()[i] *= -1;
+            if (valor == numeros[i]) {
+                numeros[i] *= -1;
                 int siguiente = i + 1;
-                while ( (siguiente < longitud) && (valor == this.getArrayDeNumeros()[siguiente])) {
-                    this.getArrayDeNumeros()[siguiente] *= -1;
+                while ( (siguiente < longitud) && (valor == numeros[siguiente])) {
+                    numeros[siguiente] *= -1;
                     siguiente++;
                 }
                 System.out.println("El valor "+valor+" existe y se cambio su signo");
+                this.setArrayDeNumeros(numeros);
                 return;
             }
         }
