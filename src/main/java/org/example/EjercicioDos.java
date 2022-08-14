@@ -90,7 +90,6 @@ public class EjercicioDos {
     public void cambiarSignoSiExiste(int valor) {
         int[] numeros = this.getArrayDeNumeros();
         int longitud = numeros.length;
-        System.out.println(longitud);
         for (int i = 0; i < longitud; i++) {
             if (valor == numeros[i]) {
                 numeros[i] *= -1;
