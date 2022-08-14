@@ -84,7 +84,12 @@ public class EjercicioDos {
     }
 
     public void mostrarNumeros() {
-        System.out.println(Arrays.toString(this.getArrayDeNumeros()));
+        int[] numeros = this.getArrayDeNumeros();
+        if (numeros != null) {
+            System.out.println(Arrays.toString(numeros));
+        } else {
+            System.out.println("Todavía no se creó un Array.");
+        }
     }
 
     public void cambiarSignoSiExiste(int valor) {
