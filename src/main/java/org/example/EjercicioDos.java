@@ -103,7 +103,7 @@ public class EjercicioDos {
         for(int i=0; i < this.getArrayDeNumeros().length; i++) {
             this.getArrayDeNumeros()[i] = rnd.nextInt(hasta - desde + 1) + desde;
         }
-        this.ordenarAscendente();this.getArrayDeNumeros());
+        this.ordenarAscendente(this.getArrayDeNumeros());
     }
 
     public void mostrarNumeros() {
