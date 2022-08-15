@@ -27,7 +27,7 @@ public class Program {
                 switch (opcion) {
                     case 1 -> {
                         EjercicioUno ej1 = new EjercicioUno();
-                        ej1.mostrarEnunciado();
+                        ej1.mostrarEnunciado(); // Refactorizar para leer desde un archivo el enunciado
                         ej1.funcionalidad();
                     }
                     case 2 -> {
