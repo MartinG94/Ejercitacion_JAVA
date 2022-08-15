@@ -4,6 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.Random;
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class EjercicioDos {
 
@@ -78,13 +79,31 @@ public class EjercicioDos {
     public void ordenarAscendente(int[] array) {
         Arrays.sort(array);
     }
+
+    public void ordenarDescendente(int[] array) {
+        for(int i = 0; i < array.length; i++) {
+            int max = i;
+
+            for (int j = i + 1; j < array.length; j++) {
+                if(array[j] > array[max]) {
+                    max = j;
+                }
+            }
+            if (i != max) {
+                int aux = array[i];
+                array[i] = array[max];
+                array[max] = aux;
+            }
+        }
+    }
+
     public void generarArrayAleatorio(int tam, int desde, int hasta) {
         this.setArrayDeNumeros(new int[tam]);
         Random rnd = new Random();
         for(int i=0; i < this.getArrayDeNumeros().length; i++) {
             this.getArrayDeNumeros()[i] = rnd.nextInt(hasta - desde + 1) + desde;
         }
-        this.ordenarAscendente(this.getArrayDeNumeros());
+        this.ordenarAscendente();this.getArrayDeNumeros());
     }
 
     public void mostrarNumeros() {
