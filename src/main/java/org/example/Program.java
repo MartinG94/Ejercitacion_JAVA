@@ -1,7 +1,7 @@
 package org.example;
 
-import org.example.ejercicioDos.EjercicioDos;
-import org.example.ejercicioUno.EjercicioUno;
+import org.example.ejercicio2.EjercicioDos;
+import org.example.ejercicio1.EjercicioUno;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

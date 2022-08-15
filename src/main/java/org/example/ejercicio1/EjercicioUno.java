@@ -1,4 +1,4 @@
-package org.example.ejercicioUno;
+package org.example.ejercicio1;
 import java.util.Scanner;
 
 public class EjercicioUno {

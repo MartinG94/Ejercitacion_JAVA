@@ -1,4 +1,4 @@
-package org.example.ejercicioDos;
+package org.example.ejercicio2;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
