@@ -7,4 +7,6 @@ public class EjercicioTres {
     public void mostrarEnunciado() {}
 
     public void funcionalidad() {}
+
+    public void generarDatosArbitrarios() {}
 }
