@@ -1,11 +1,9 @@
-package org.example;
+package org.example.ejercicioDos;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.Random;
 import java.util.Arrays;
-import java.util.Comparator;
-
 public class EjercicioDos {
 
     private final String enunciado = """
