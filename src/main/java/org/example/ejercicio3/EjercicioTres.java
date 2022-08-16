@@ -8,6 +8,7 @@ public class EjercicioTres {
 
     public void funcionalidad() {
         Persona martin = new Persona("Martin", "Guillen");
+        Persona sol = new Persona("Sol","Romero");
         System.out.println(martin);
     }
 
